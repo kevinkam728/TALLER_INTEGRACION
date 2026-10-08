@@ -1,0 +1,672 @@
+{
+  "format": "er-diagram",
+  "version": 1,
+  "nodes": [
+    {
+      "id": 8,
+      "type": "entity",
+      "label": "Usuario",
+      "x": 216,
+      "y": 57,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Correo",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Contraseña_hash",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Nombre_usuario",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Es_admin",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Fecha_registro",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "type": "entity",
+      "label": "Equipo",
+      "x": 679,
+      "y": 54,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Nombre",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Escudo_url",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Pais",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Estadio",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Director_tecnico",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "type": "entity",
+      "label": "Competicion",
+      "x": 72.55089632897574,
+      "y": 330.3573915346101,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Nombre",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Temporada",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Pais",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "type": "entity",
+      "label": "Jugador",
+      "x": 1136,
+      "y": 58,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Nombre",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Posicion",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Nacionalidad",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Estadisticas_temporada",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "type": "relation",
+      "label": "Sub",
+      "x": 459,
+      "y": 54,
+      "w": 120,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "Tipo_alerta",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Chat_id_telegram",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "type": "relation",
+      "label": "Pertenece",
+      "x": 924,
+      "y": 55,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 20,
+      "type": "entity",
+      "label": "Partido",
+      "x": 684.9710054563695,
+      "y": 360.13756820462123,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Hora_inicio",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Estado",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Resultado_local",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Resultado_visitante",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Minuto_juego",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Arbitro",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "type": "relation",
+      "label": "Pertenece",
+      "x": 398.89989482602226,
+      "y": 343.08049525037063,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 25,
+      "type": "relation",
+      "label": "Juega local",
+      "x": 491.7875811835414,
+      "y": 217.25354637914245,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 28,
+      "type": "relation",
+      "label": "Genera",
+      "x": 948.73637309932,
+      "y": 488.842894262795,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 32,
+      "type": "relation",
+      "label": "Tiene",
+      "x": 1048.8943195200857,
+      "y": 365.8372858197733,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 39,
+      "type": "entity",
+      "label": "Reporte",
+      "x": 427.64466096290613,
+      "y": -172.8044427081182,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Descripcion",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Fecha",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Estado",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "type": "relation",
+      "label": "Envia",
+      "x": 231.19082878635862,
+      "y": -79.14497271815151,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 47,
+      "type": "relation",
+      "label": "Juega visitante",
+      "x": 912.4346063992092,
+      "y": 205.8115354664031,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 50,
+      "type": "entity",
+      "label": "Noticia",
+      "x": 901.011821263808,
+      "y": -168.52426603810707,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Titulo",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Contenido",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Fecha",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "type": "relation",
+      "label": "Es tema de",
+      "x": 692.5008799374984,
+      "y": -87.70483026694379,
+      "w": 120,
+      "h": 44,
+      "attrs": []
+    },
+    {
+      "id": 55,
+      "type": "entity",
+      "label": "Backup",
+      "x": 441.20257716490045,
+      "y": 513.6654992690118,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "ID",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Fecha",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Ruta_archivo",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Estado",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "type": "weak",
+      "label": "Evento",
+      "x": 933.9942452457186,
+      "y": 646.6646012337574,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "nro_evento",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "Tipo",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Descripcion",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Minuto",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Origen",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Fecha_registro",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "type": "weak",
+      "label": "Historial",
+      "x": 1284.1459989669097,
+      "y": 367.10219539621875,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "timestamp",
+          "pk": true,
+          "mv": false
+        },
+        {
+          "name": "prob_local",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "prob_visitante",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "prob_empate",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "type": "isa",
+      "label": "ISA",
+      "x": 116.4034683750408,
+      "y": 502.7492206118866,
+      "w": 70,
+      "h": 55,
+      "attrs": [],
+      "disjoint": true,
+      "total": true
+    },
+    {
+      "id": 60,
+      "type": "entity",
+      "label": "Copa",
+      "x": -65.921226359174,
+      "y": 647.0884126179163,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "Existen_vueltas",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "type": "entity",
+      "label": "Liga",
+      "x": 211.75715765288567,
+      "y": 648.2502468606447,
+      "w": 150,
+      "h": 44,
+      "attrs": [
+        {
+          "name": "Cantidad_fechas",
+          "pk": false,
+          "mv": false
+        },
+        {
+          "name": "Formato_texto",
+          "pk": false,
+          "mv": false
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": 16,
+      "src": 8,
+      "tgt": 14,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 17,
+      "src": 14,
+      "tgt": 9,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 18,
+      "src": 9,
+      "tgt": 15,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 19,
+      "src": 15,
+      "tgt": 11,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 22,
+      "src": 10,
+      "tgt": 21,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 23,
+      "src": 21,
+      "tgt": 20,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 26,
+      "src": 9,
+      "tgt": 25,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 27,
+      "src": 25,
+      "tgt": 20,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 30,
+      "src": 20,
+      "tgt": 28,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 33,
+      "src": 20,
+      "tgt": 32,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 42,
+      "src": 8,
+      "tgt": 41,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 43,
+      "src": 41,
+      "tgt": 39,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 48,
+      "src": 9,
+      "tgt": 47,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 49,
+      "src": 47,
+      "tgt": 20,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 53,
+      "src": 9,
+      "tgt": 51,
+      "card1": "(0,n)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 54,
+      "src": 50,
+      "tgt": 51,
+      "card1": "(0,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 62,
+      "src": 10,
+      "tgt": 59,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 63,
+      "src": 59,
+      "tgt": 60,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 64,
+      "src": 59,
+      "tgt": 61,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 65,
+      "src": 28,
+      "tgt": 56,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    },
+    {
+      "id": 66,
+      "src": 32,
+      "tgt": 57,
+      "card1": "(1,1)",
+      "card2": "(1,n)"
+    }
+  ],
+  "strokes": [],
+  "nextId": 67,
+  "view": {
+    "x": 157.63072715902206,
+    "y": 163.8802109175195,
+    "scale": 0.7408182206817179
+  }
+}
