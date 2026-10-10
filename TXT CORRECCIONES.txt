@@ -1,0 +1,12 @@
+TXT CORRECCIONES
+
+.Recibir Notificaciones -> Gestión Notificaciones.
+.Consultar Fixture -> Gestión Fixture
+.Caso de uso, agregar apartado Noticias.
+.Gestor de Alerta en caso de uso.
+.Usuario Registrado, pasar a cliente o similar.
+.Diagrama conversacional.
+.Cardinalidad noticias -> equipo
+.Equipo<->partido, cambiar relación a 1
+.Agregar en auditoria, información de conexiones a API y LLMS.
+.MER, revisar flechas. Hacer tablas BD.
